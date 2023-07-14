@@ -1,11 +1,19 @@
+import PropTypes from 'prop-types'; 
 import css from './FriendListItem.module.css';
+import { FriendItem, Status, FriendImg, FriendName } from './FriendListItem.styled';
 
-export const FriendListItem = ({avatar, name, isOnline}) => {
+export const FriendListItem = ({avatar, name, status}) => {
     return (
-        <li className={css.item}>
-        <span className={css.status}>{isOnline}</span>
-        <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-        <p className={css.name}>{name}</p>
-        </li>
+        <FriendItem>
+        <Status statusIsOnline={status}></Status>
+        <FriendImg src={avatar} alt="User avatar" width="48" />
+        <FriendName>{name}</FriendName>
+        </FriendItem>
     )
 }   
+
+FriendListItem.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    status: PropTypes.bool.isRequired,
+}

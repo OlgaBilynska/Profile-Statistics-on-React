@@ -1,10 +1,11 @@
 import css from './StatEl.module.css';
+import { StatItem, StatLabel, StatPercentage } from './StatEl.styled';
 
-export const StatEl = ({ stats }) => {
+export const StatEl = ({label, percentage }) => {
     return (
-        <li className={css.item}>
-            <span className={css.label}>{stats.label}</span>
-            <span className={css.percentage}>{stats.percentage}</span>
-        </li>
+        <StatItem>
+            <StatLabel>{label}</StatLabel>
+            <StatPercentage>{percentage}</StatPercentage>
+        </StatItem>
     )
 }
