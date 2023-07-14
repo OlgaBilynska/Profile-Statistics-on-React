@@ -12,7 +12,6 @@ import transactions from '../TransactionHistory/transactions.json';
 
 export const App = () => {
   return (
-    // <div className={css.container}>
     <Container>
       <Profile
         username={user.username}

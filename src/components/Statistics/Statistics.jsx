@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import { StatEl } from 'components/StatElement/StatEl';
-import css from './Statistics.module.css';
 import { Section, Title, List } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   console.log('stats', stats);
 
   return (
-      <Section>
+    <Section>
       {title && <Title>{title}</Title>}
       <List>
         {stats.map(({ id, percentage, label }) => (

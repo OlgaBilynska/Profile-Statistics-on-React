@@ -1,5 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --container: #4bb39a;
+  --section: #3284be;
+  --border: #36846b;
+  --accent: lightgray;
+  --online: rgb(48, 236, 48);
+  --offline: red;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -43,18 +52,4 @@ a {
 
 button {
   cursor: pointer;
-}
-
-:root {
-  --container: #4bb39a;
-  --section: #3284be;
-  --border: #36846b;
-  --accent: lightgray;
-  --online: rgb(48, 236, 48);
-  --offline: red;
-}
-
-.try {
-  display: flex;
-  justify-content: ;
 }

@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'; 
-import css from './Transaction.module.css';
+import PropTypes from 'prop-types';
 import { TableCell, TableRow } from './Transaction.styled';
 
 export const Transaction = ({ type, amount, currency }) => {
@@ -13,7 +12,7 @@ export const Transaction = ({ type, amount, currency }) => {
 };
 
 Transaction.propTypes = {
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-}
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};

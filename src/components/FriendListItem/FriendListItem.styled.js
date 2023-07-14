@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const FriendItem = styled.li`
-position: relative;
+  position: relative;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -21,24 +21,22 @@ position: relative;
   }
 `;
 
-const isOnline = ({ statusIsOnline }) => (statusIsOnline ? 'var(--online)' : 'var(--offline)');
+const isOnline = ({ statusIsOnline }) =>
+  statusIsOnline ? 'var(--online)' : 'var(--offline)';
 
 export const Status = styled.span`
-position: absolute;
-top: 10px;
-right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
-width: 17px;
-height: 17px;
-border: 1px solid var(--border);
-border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
 
-   background-color: ${isOnline};
-`
-
-export const FriendImg = styled.img`
-  
+  background-color: ${isOnline};
 `;
 
-export const FriendName = styled.p`
-`;
+export const FriendImg = styled.img``;
+
+export const FriendName = styled.p``;

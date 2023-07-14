@@ -14,13 +14,13 @@ export const Section = styled.div`
 `;
 
 export const Statistics = styled.ul`
-position: relative;
+  position: relative;
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
   gap: 15px;
 
   &::before {
-    content:'';
+    content: '';
     position: absolute;
     top: -10px;
     width: 100%;
@@ -30,24 +30,24 @@ position: relative;
 `;
 
 export const StatItem = styled.li`
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-width: 30%;
+  width: 30%;
 
-&::after {
-  content: '';
-  position: absolute;
-  right: -10%;
-  
-  height: 100%;
-  width: 1px;
-  background-color: var(--accent);
-}
+  &::after {
+    content: '';
+    position: absolute;
+    right: -10%;
 
- &:last-of-type::after {
+    height: 100%;
+    width: 1px;
+    background-color: var(--accent);
+  }
+
+  &:last-of-type::after {
     content: none;
   }
 `;
@@ -58,20 +58,20 @@ export const StatLabel = styled.span`
 
 export const StatQuantity = styled.span`
   font-size: 16px;
-`
+`;
 
 export const Description = styled.div`
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 25px;
   gap: 5px;
 `;
 
 export const ImgProfile = styled.img`
-width: 50%;
-margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 `;
 
 export const UserName = styled.p`
@@ -96,5 +96,5 @@ export const UserTag = styled.p`
 export const UserLocation = styled.p`
   font-size: 18px;
   color: var(--accent);
-`
+`;
 // export { UserLocation, UserTag, UserName, ImgProfile, Description, StatQuantity, StatLabel, StatItem, Statistics, Section };

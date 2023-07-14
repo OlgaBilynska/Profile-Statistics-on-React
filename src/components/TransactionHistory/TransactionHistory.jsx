@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
-import css from './TransactionHistory.module.css';
 import { Transaction } from 'components/Transaction/Transaction';
-import { TableTopCell, Table, TableTop, TableTopRow, TableBody } from './TransactionHistory.styled';
+import {
+  TableTopCell,
+  Table,
+  TableTop,
+  TableTopRow,
+  TableBody,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
